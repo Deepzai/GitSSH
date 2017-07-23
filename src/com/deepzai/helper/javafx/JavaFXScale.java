@@ -1,4 +1,4 @@
-package com.deepzai.helper;
+package com.deepzai.helper.javafx;
 
 import javafx.stage.Stage;
 

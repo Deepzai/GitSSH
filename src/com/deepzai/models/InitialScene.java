@@ -1,8 +1,8 @@
 package com.deepzai.models;
 
 import com.deepzai.GitSSH;
-import com.deepzai.helper.JavaFXScale;
-import com.deepzai.helper.SceneHelper;
+import com.deepzai.helper.javafx.JavaFXScale;
+import com.deepzai.helper.javafx.SceneHelper;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

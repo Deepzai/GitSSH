@@ -11,10 +11,12 @@ public class FileHelper {
 
     public static String FILE_TO_STRING(File file) throws IOException {
         final String br = System.getProperty("line.separator");
+
         List<String> lines = Files.readAllLines(Paths.get(file.toURI()),
                 Charset.defaultCharset());
 
         StringBuilder sb = new StringBuilder();
+
         for (String line : lines) {
             sb.append(line).append(br);
         }

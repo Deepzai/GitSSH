@@ -50,3 +50,6 @@ fabric.properties
 
 # Intellij IDEA module files (.iml)
 *.iml
+
+# Custom files
+/to-do.txt
