@@ -13,7 +13,7 @@ public class GitValidator {
         boolean git = false;
 
         Runtime rt = Runtime.getRuntime();
-        String cmd = "where bash.exe";
+        String cmd = "where git";
         Process proc = rt.exec(cmd);
 
         BufferedReader input = new BufferedReader(new InputStreamReader(proc.getInputStream()));

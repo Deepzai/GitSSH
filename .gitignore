@@ -53,3 +53,4 @@ fabric.properties
 
 # Custom files
 /to-do.txt
+.idea/**/misc.xml
