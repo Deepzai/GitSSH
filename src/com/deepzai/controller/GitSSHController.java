@@ -22,6 +22,7 @@ public class GitSSHController {
     public void generateSSH(ActionEvent event) throws IOException {
         if(!System.getProperty("os.name").toLowerCase().contains("win")) {
             Alerts.alert_err_OS();
+            return;
         }
 
         if(!GitValidator.isGitInstalled()) {

@@ -16,8 +16,6 @@ public class EnvironmentMapper {
                 Map<String, String> map = (Map<String, String>) obj;
                 map.clear();
                 map.putAll(newenv);
-                System.out.println("test" + map);
-                System.out.println(System.getenv());
             }
         }
     }
