@@ -65,4 +65,13 @@ public class Alerts {
             }
         }
     }
+
+    public static void alert_minor_newVersion(String new_version) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("GitSSH - New oVersion Found");
+        alert.setHeaderText("You seem to be using an outdated version. Your current version: " + GitSSH.current_version);
+        alert.setContentText("The latest version is currently " + new_version);
+
+        // add download button for new version
+    }
 }
