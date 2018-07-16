@@ -12,6 +12,27 @@ import java.util.Optional;
 
 public class Alerts {
 
+    public String alertType;
+
+    public Alerts(EnumAlerts alerts) {
+        switch(alerts) {
+            case OS_ERR:
+                alertType = "alert_err_os()";
+                break;
+            case DUP_KEY:
+                alertType = "alert_err_duplicateKey()";
+                break;
+            case GIT_NOT_FOUND:
+                alertType = "alert_err_gitNotFound()";
+                break;
+            case NEW_VERSION:
+                alertType = "alert_minor_newVersion()";
+                break;
+            default:
+                alertType = "unassigned";
+        }
+    }
+//OS_ERR, DUP_KEY, GIT_NOT_FOUND, NEW_VERSION;
     public static boolean exitCode_duplicateKey = false;
 
     public static void alert_err_OS() {
